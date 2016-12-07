@@ -1,0 +1,22 @@
+h1, h2, h4 {
+  margin: 0
+}
+
+
+.goButton span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.goButton:hover span {
+  padding-right: 25px;
+}
+
+.goButton:hover span:after {
+  opacity: 1;
+  right: 0;
+}

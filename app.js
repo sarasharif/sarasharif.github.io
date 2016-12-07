@@ -8257,10 +8257,10 @@ var _elm_lang$html$Html_Events$Options = F2(
 	});
 
 var _user$project$Details$xylophone = {
-	name: 'Xylophone',
+	name: 'Xylophonica',
 	image_link: 'img/xy.png',
 	url: 'http://xylophone.herokuapp.com',
-	description: 'a xylophone and a harmonica had a baby',
+	description: 'Make music with your keyboard. Record, play, and delete little jingles.',
 	tech_stack: {
 		ctor: '::',
 		_0: 'rails',
@@ -8276,10 +8276,10 @@ var _user$project$Details$xylophone = {
 	}
 };
 var _user$project$Details$connect4 = {
-	name: 'Connect4',
+	name: 'Connect-4',
 	image_link: 'img/c4.png',
 	url: 'http://sarasharif.github.io/connect4',
-	description: 'the classic kid\'s game',
+	description: 'The original vertical, 4-in-a-row, checkers game. Animated with jQuery',
 	tech_stack: {
 		ctor: '::',
 		_0: 'javascript',
@@ -8295,10 +8295,10 @@ var _user$project$Details$connect4 = {
 	}
 };
 var _user$project$Details$wedding = {
-	name: 'Wedding',
+	name: 'A Wedding!',
 	image_link: 'img/sm.png',
 	url: 'http://otherwedding.herokuapp.com',
-	description: 'a wedding website with RSVPs',
+	description: 'A present to my brother and his fiance: a MEAN wedding website with RSVPs.',
 	tech_stack: {
 		ctor: '::',
 		_0: 'mondodb',
@@ -8318,10 +8318,10 @@ var _user$project$Details$wedding = {
 	}
 };
 var _user$project$Details$culturemap = {
-	name: 'Culturemap',
+	name: 'cultureMap',
 	image_link: 'img/cm.png',
 	url: 'http://culturemap.site',
-	description: 'this is a game',
+	description: 'Explore our world heritage, competitively. Built on Rails and React.',
 	tech_stack: {
 		ctor: '::',
 		_0: 'rails',
@@ -8361,10 +8361,24 @@ var _user$project$Details$Project = F5(
 		return {name: a, image_link: b, url: c, description: d, tech_stack: e};
 	});
 
+var _user$project$Style$buttonSpanStyle = _elm_lang$html$Html_Attributes$style(
+	{
+		ctor: '::',
+		_0: {ctor: '_Tuple2', _0: 'display', _1: 'inline-block'},
+		_1: {
+			ctor: '::',
+			_0: {ctor: '_Tuple2', _0: 'position', _1: 'relative'},
+			_1: {
+				ctor: '::',
+				_0: {ctor: '_Tuple2', _0: 'transition', _1: '0.5s'},
+				_1: {ctor: '[]'}
+			}
+		}
+	});
 var _user$project$Style$goButtonStyle = _elm_lang$html$Html_Attributes$style(
 	{
 		ctor: '::',
-		_0: {ctor: '_Tuple2', _0: 'display', _1: 'flex'},
+		_0: {ctor: '_Tuple2', _0: 'border-radius', _1: '50px'},
 		_1: {
 			ctor: '::',
 			_0: {ctor: '_Tuple2', _0: 'color', _1: 'white'},
@@ -8373,14 +8387,22 @@ var _user$project$Style$goButtonStyle = _elm_lang$html$Html_Attributes$style(
 				_0: {ctor: '_Tuple2', _0: 'border', _1: '10px solid white'},
 				_1: {
 					ctor: '::',
-					_0: {ctor: '_Tuple2', _0: 'border-radius', _1: '50px'},
+					_0: {ctor: '_Tuple2', _0: 'text-align', _1: 'center'},
 					_1: {
 						ctor: '::',
 						_0: {ctor: '_Tuple2', _0: 'padding', _1: '20px'},
 						_1: {
 							ctor: '::',
-							_0: {ctor: '_Tuple2', _0: 'text-decoration', _1: 'none'},
-							_1: {ctor: '[]'}
+							_0: {ctor: '_Tuple2', _0: 'width', _1: '50%'},
+							_1: {
+								ctor: '::',
+								_0: {ctor: '_Tuple2', _0: 'text-decoration', _1: 'none'},
+								_1: {
+									ctor: '::',
+									_0: {ctor: '_Tuple2', _0: 'transition', _1: 'all 0.5s'},
+									_1: {ctor: '[]'}
+								}
+							}
 						}
 					}
 				}
@@ -8402,7 +8424,7 @@ var _user$project$Style$projectDescriptionStyle = F2(
 						_0: {ctor: '_Tuple2', _0: 'justify-content', _1: 'space-around'},
 						_1: {
 							ctor: '::',
-							_0: {ctor: '_Tuple2', _0: 'background-color', _1: 'rgba(5,5,5,.7)'},
+							_0: {ctor: '_Tuple2', _0: 'background-color', _1: 'rgba(5,5,5,.85)'},
 							_1: {
 								ctor: '::',
 								_0: {ctor: '_Tuple2', _0: 'color', _1: 'white'},
@@ -8424,7 +8446,19 @@ var _user$project$Style$projectDescriptionStyle = F2(
 													_1: {
 														ctor: '::',
 														_0: {ctor: '_Tuple2', _0: 'text-align', _1: 'center'},
-														_1: {ctor: '[]'}
+														_1: {
+															ctor: '::',
+															_0: {ctor: '_Tuple2', _0: 'align-items', _1: 'center'},
+															_1: {
+																ctor: '::',
+																_0: {ctor: '_Tuple2', _0: 'box-sizing', _1: 'border-box'},
+																_1: {
+																	ctor: '::',
+																	_0: {ctor: '_Tuple2', _0: 'padding', _1: '40px'},
+																	_1: {ctor: '[]'}
+																}
+															}
+														}
 													}
 												}
 											}
@@ -8475,32 +8509,36 @@ var _user$project$Style$projectParentStyle = _elm_lang$html$Html_Attributes$styl
 			_1: {
 				ctor: '::',
 				_0: {ctor: '_Tuple2', _0: 'justify-content', _1: 'center'},
-				_1: {ctor: '[]'}
+				_1: {
+					ctor: '::',
+					_0: {ctor: '_Tuple2', _0: 'margin-bottom', _1: '10vh'},
+					_1: {ctor: '[]'}
+				}
 			}
 		}
 	});
 var _user$project$Style$profileDescriptionStyle = _elm_lang$html$Html_Attributes$style(
 	{
 		ctor: '::',
-		_0: {ctor: '_Tuple2', _0: 'background-color', _1: 'rgba(255,255,255,.6)'},
+		_0: {ctor: '_Tuple2', _0: 'display', _1: 'flex'},
 		_1: {
 			ctor: '::',
-			_0: {ctor: '_Tuple2', _0: 'max-height', _1: '50vh'},
+			_0: {ctor: '_Tuple2', _0: 'flex-direction', _1: 'column'},
 			_1: {
 				ctor: '::',
-				_0: {ctor: '_Tuple2', _0: 'flex-grow', _1: '4'},
+				_0: {ctor: '_Tuple2', _0: 'justify-content', _1: 'center'},
 				_1: {
 					ctor: '::',
-					_0: {ctor: '_Tuple2', _0: 'vertical-align', _1: 'baseline'},
+					_0: {ctor: '_Tuple2', _0: 'background-color', _1: 'rgba(255,255,255,.6)'},
 					_1: {
 						ctor: '::',
-						_0: {ctor: '_Tuple2', _0: 'font-size', _1: '3em'},
+						_0: {ctor: '_Tuple2', _0: 'flex-grow', _1: '4'},
 						_1: {
 							ctor: '::',
-							_0: {ctor: '_Tuple2', _0: 'padding', _1: '10% 5%'},
+							_0: {ctor: '_Tuple2', _0: 'font-size', _1: '3em'},
 							_1: {
 								ctor: '::',
-								_0: {ctor: '_Tuple2', _0: 'line-height', _1: '30px'},
+								_0: {ctor: '_Tuple2', _0: 'padding', _1: '10% 5%'},
 								_1: {ctor: '[]'}
 							}
 						}
@@ -8512,7 +8550,7 @@ var _user$project$Style$profileDescriptionStyle = _elm_lang$html$Html_Attributes
 var _user$project$Style$profileImageStyle = _elm_lang$html$Html_Attributes$style(
 	{
 		ctor: '::',
-		_0: {ctor: '_Tuple2', _0: 'height', _1: '50vh'},
+		_0: {ctor: '_Tuple2', _0: 'height', _1: '100%'},
 		_1: {ctor: '[]'}
 	});
 var _user$project$Style$profileStyle = _elm_lang$html$Html_Attributes$style(
@@ -8527,14 +8565,18 @@ var _user$project$Style$profileStyle = _elm_lang$html$Html_Attributes$style(
 				_0: {ctor: '_Tuple2', _0: 'display', _1: 'flex'},
 				_1: {
 					ctor: '::',
-					_0: {ctor: '_Tuple2', _0: 'flex-direction', _1: 'row'},
+					_0: {ctor: '_Tuple2', _0: 'width', _1: '60vw'},
 					_1: {
 						ctor: '::',
-						_0: {ctor: '_Tuple2', _0: 'width', _1: '60vw'},
+						_0: {ctor: '_Tuple2', _0: 'height', _1: '50vh'},
 						_1: {
 							ctor: '::',
 							_0: {ctor: '_Tuple2', _0: 'justify-content', _1: 'center'},
-							_1: {ctor: '[]'}
+							_1: {
+								ctor: '::',
+								_0: {ctor: '_Tuple2', _0: 'align-items', _1: 'stretch'},
+								_1: {ctor: '[]'}
+							}
 						}
 					}
 				}
@@ -8666,26 +8708,52 @@ var _user$project$Main$projectDetails = F2(
 				_1: {
 					ctor: '::',
 					_0: A2(
-						_elm_lang$html$Html$a,
+						_elm_lang$html$Html$h2,
+						{ctor: '[]'},
 						{
 							ctor: '::',
-							_0: _user$project$Style$goButtonStyle,
-							_1: {
-								ctor: '::',
-								_0: _elm_lang$html$Html_Attributes$target('_blank'),
-								_1: {
-									ctor: '::',
-									_0: _elm_lang$html$Html_Attributes$href(project.url),
-									_1: {ctor: '[]'}
-								}
-							}
-						},
-						{
-							ctor: '::',
-							_0: _elm_lang$html$Html$text('Check it out!'),
+							_0: _elm_lang$html$Html$text(project.description),
 							_1: {ctor: '[]'}
 						}),
-					_1: {ctor: '[]'}
+					_1: {
+						ctor: '::',
+						_0: A2(
+							_elm_lang$html$Html$a,
+							{
+								ctor: '::',
+								_0: _elm_lang$html$Html_Attributes$class('goButton'),
+								_1: {
+									ctor: '::',
+									_0: _user$project$Style$goButtonStyle,
+									_1: {
+										ctor: '::',
+										_0: _elm_lang$html$Html_Attributes$target('_blank'),
+										_1: {
+											ctor: '::',
+											_0: _elm_lang$html$Html_Attributes$href(project.url),
+											_1: {ctor: '[]'}
+										}
+									}
+								}
+							},
+							{
+								ctor: '::',
+								_0: A2(
+									_elm_lang$html$Html$span,
+									{
+										ctor: '::',
+										_0: _user$project$Style$buttonSpanStyle,
+										_1: {ctor: '[]'}
+									},
+									{
+										ctor: '::',
+										_0: _elm_lang$html$Html$text('Check it out!'),
+										_1: {ctor: '[]'}
+									}),
+								_1: {ctor: '[]'}
+							}),
+						_1: {ctor: '[]'}
+					}
 				}
 			});
 	});

@@ -58,28 +58,29 @@ profileStyle =
         [ ( "margin", "10px" )
         , ( "padding", "0" )
         , ( "display", "flex" )
-        , ( "flex-direction", "row" )
         , ( "width", "60vw" )
+        , ( "height", "50vh" )
         , ( "justify-content", "center" )
+        , ( "align-items", "stretch" )
         ]
 
 
 profileImageStyle : Attribute msg
 profileImageStyle =
     style
-        [ ( "height", "50vh" ) ]
+        [ ( "height", "100%" ) ]
 
 
 profileDescriptionStyle : Attribute msg
 profileDescriptionStyle =
     style
-        [ ( "background-color", "rgba(255,255,255,.6)" )
-        , ( "max-height", "50vh" )
+        [ ( "display", "flex" )
+        , ( "flex-direction", "column" )
+        , ( "justify-content", "center" )
+        , ( "background-color", "rgba(255,255,255,.6)" )
         , ( "flex-grow", "4" )
-        , ( "vertical-align", "baseline" )
         , ( "font-size", "3em" )
         , ( "padding", "10% 5%" )
-        , ( "line-height", "30px" )
         ]
 
 
@@ -89,6 +90,7 @@ projectParentStyle =
         [ ( "display", "flex" )
         , ( "flex-wrap", "wrap" )
         , ( "justify-content", "center" )
+        , ( "margin-bottom", "10vh" )
         ]
 
 
@@ -123,7 +125,7 @@ projectDescriptionStyle model match =
             [ ( "display", "flex" )
             , ( "flex-direction", "column" )
             , ( "justify-content", "space-around" )
-            , ( "background-color", "rgba(5,5,5,.7)" )
+            , ( "background-color", "rgba(5,5,5,.85)" )
             , ( "color", "white" )
             , ( "position", "absolute" )
             , ( "top", "0px" )
@@ -131,16 +133,30 @@ projectDescriptionStyle model match =
             , ( "height", "100%" )
             , ( "z-index", (zindex) )
             , ( "text-align", "center" )
+            , ( "align-items", "center" )
+            , ( "box-sizing", "border-box" )
+            , ( "padding", "40px" )
             ]
 
 
 goButtonStyle : Attribute msg
 goButtonStyle =
     style
-        [ ( "display", "flex" )
+        [ ( "border-radius", "50px" )
         , ( "color", "white" )
         , ( "border", "10px solid white" )
-        , ( "border-radius", "50px" )
+        , ( "text-align", "center" )
         , ( "padding", "20px" )
+        , ( "width", "50%" )
         , ( "text-decoration", "none" )
+        , ( "transition", "all 0.5s" )
+        ]
+
+
+buttonSpanStyle : Attribute msg
+buttonSpanStyle =
+    style
+        [ ( "display", "inline-block" )
+        , ( "position", "relative" )
+        , ( "transition", "0.5s" )
         ]

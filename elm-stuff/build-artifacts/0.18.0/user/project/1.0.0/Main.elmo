@@ -20,26 +20,52 @@ var _user$project$Main$projectDetails = F2(
 				_1: {
 					ctor: '::',
 					_0: A2(
-						_elm_lang$html$Html$a,
+						_elm_lang$html$Html$h2,
+						{ctor: '[]'},
 						{
 							ctor: '::',
-							_0: _user$project$Style$goButtonStyle,
-							_1: {
-								ctor: '::',
-								_0: _elm_lang$html$Html_Attributes$target('_blank'),
-								_1: {
-									ctor: '::',
-									_0: _elm_lang$html$Html_Attributes$href(project.url),
-									_1: {ctor: '[]'}
-								}
-							}
-						},
-						{
-							ctor: '::',
-							_0: _elm_lang$html$Html$text('Check it out!'),
+							_0: _elm_lang$html$Html$text(project.description),
 							_1: {ctor: '[]'}
 						}),
-					_1: {ctor: '[]'}
+					_1: {
+						ctor: '::',
+						_0: A2(
+							_elm_lang$html$Html$a,
+							{
+								ctor: '::',
+								_0: _elm_lang$html$Html_Attributes$class('goButton'),
+								_1: {
+									ctor: '::',
+									_0: _user$project$Style$goButtonStyle,
+									_1: {
+										ctor: '::',
+										_0: _elm_lang$html$Html_Attributes$target('_blank'),
+										_1: {
+											ctor: '::',
+											_0: _elm_lang$html$Html_Attributes$href(project.url),
+											_1: {ctor: '[]'}
+										}
+									}
+								}
+							},
+							{
+								ctor: '::',
+								_0: A2(
+									_elm_lang$html$Html$span,
+									{
+										ctor: '::',
+										_0: _user$project$Style$buttonSpanStyle,
+										_1: {ctor: '[]'}
+									},
+									{
+										ctor: '::',
+										_0: _elm_lang$html$Html$text('Check it out!'),
+										_1: {ctor: '[]'}
+									}),
+								_1: {ctor: '[]'}
+							}),
+						_1: {ctor: '[]'}
+					}
 				}
 			});
 	});

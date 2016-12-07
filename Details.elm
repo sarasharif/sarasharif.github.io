@@ -36,39 +36,39 @@ type alias Project =
 
 culturemap : Project
 culturemap =
-    { name = "Culturemap"
+    { name = "cultureMap"
     , image_link = "img/cm.png"
     , url = "http://culturemap.site"
-    , description = "this is a game"
+    , description = "Explore our world heritage, competitively. Built on Rails and React."
     , tech_stack = [ "rails", "react", "flux" ]
     }
 
 
 wedding : Project
 wedding =
-    { name = "Wedding"
+    { name = "A Wedding!"
     , image_link = "img/sm.png"
     , url = "http://otherwedding.herokuapp.com"
-    , description = "a wedding website with RSVPs"
+    , description = "A present to my brother and his fiance: a MEAN wedding website with RSVPs."
     , tech_stack = [ "mondodb", "express", "angular", "node" ]
     }
 
 
 connect4 : Project
 connect4 =
-    { name = "Connect4"
+    { name = "Connect-4"
     , image_link = "img/c4.png"
     , url = "http://sarasharif.github.io/connect4"
-    , description = "the classic kid's game"
+    , description = "The original vertical, 4-in-a-row, checkers game. Animated with jQuery"
     , tech_stack = [ "javascript", "jquery", "minimax" ]
     }
 
 
 xylophone : Project
 xylophone =
-    { name = "Xylophone"
+    { name = "Xylophonica"
     , image_link = "img/xy.png"
     , url = "http://xylophone.herokuapp.com"
-    , description = "a xylophone and a harmonica had a baby"
+    , description = "Make music with your keyboard. Record, play, and delete little jingles."
     , tech_stack = [ "rails", "react", "flux" ]
     }

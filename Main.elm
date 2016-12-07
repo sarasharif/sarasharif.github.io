@@ -136,5 +136,7 @@ projectDetails : String -> Project -> Html Msg
 projectDetails selected_project project =
     div [ projectDescriptionStyle selected_project project.name ]
         [ h1 [] [ text project.name ]
-        , a [ goButtonStyle, target "_blank", href project.url ] [ text "Check it out!" ]
+        , h2 [] [ text project.description ]
+        , a [ class "goButton", goButtonStyle, target "_blank", href project.url ]
+            [ span [ buttonSpanStyle ] [ text "Check it out!" ] ]
         ]
