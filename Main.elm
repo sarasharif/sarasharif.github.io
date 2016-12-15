@@ -139,4 +139,6 @@ projectDetails selected_project project =
         , h2 [] [ text project.description ]
         , a [ class "goButton", goButtonStyle, target "_blank", href project.url ]
             [ span [ buttonSpanStyle ] [ text "Check it out!" ] ]
+        , a [ class "goButton", goButtonStyle, target "_blank", href project.git ]
+            [ span [ buttonSpanStyle ] [ text "View the Code!" ] ]
         ]

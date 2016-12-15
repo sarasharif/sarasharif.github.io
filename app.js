@@ -8260,6 +8260,7 @@ var _user$project$Details$xylophone = {
 	name: 'Xylophonica',
 	image_link: 'img/xy.png',
 	url: 'http://xylophone.herokuapp.com',
+	git: 'https://github.com/sarasharif/xylophone',
 	description: 'Make music with your keyboard. Record, play, and delete little jingles.',
 	tech_stack: {
 		ctor: '::',
@@ -8279,6 +8280,7 @@ var _user$project$Details$connect4 = {
 	name: 'Connect-4',
 	image_link: 'img/c4.png',
 	url: 'http://sarasharif.github.io/connect4',
+	git: 'https://github.com/sarasharif/connect4',
 	description: 'The original vertical, 4-in-a-row, checkers game. Animated with jQuery',
 	tech_stack: {
 		ctor: '::',
@@ -8298,7 +8300,8 @@ var _user$project$Details$wedding = {
 	name: 'A Wedding!',
 	image_link: 'img/sm.png',
 	url: 'http://otherwedding.herokuapp.com',
-	description: 'A present to my brother and his fiance: a MEAN wedding website with RSVPs.',
+	git: 'https://github.com/sarasharif/otherwedding',
+	description: 'A present to my brother and his fiancé: a MEAN wedding website with RSVPs.',
 	tech_stack: {
 		ctor: '::',
 		_0: 'mondodb',
@@ -8321,6 +8324,7 @@ var _user$project$Details$culturemap = {
 	name: 'cultureMap',
 	image_link: 'img/cm.png',
 	url: 'http://culturemap.site',
+	git: 'https://github.com/sarasharif/CultureMap',
 	description: 'Explore our world heritage, competitively. Built on Rails and React.',
 	tech_stack: {
 		ctor: '::',
@@ -8356,9 +8360,9 @@ var _user$project$Details$my_projects = {
 var _user$project$Details$profile_picture = 'img/sara.jpg';
 var _user$project$Details$occupation = 'Software Engineer';
 var _user$project$Details$name = 'Sara Sharif';
-var _user$project$Details$Project = F5(
-	function (a, b, c, d, e) {
-		return {name: a, image_link: b, url: c, description: d, tech_stack: e};
+var _user$project$Details$Project = F6(
+	function (a, b, c, d, e, f) {
+		return {name: a, image_link: b, url: c, git: d, description: e, tech_stack: f};
 	});
 
 var _user$project$Style$buttonSpanStyle = _elm_lang$html$Html_Attributes$style(
@@ -8752,7 +8756,45 @@ var _user$project$Main$projectDetails = F2(
 									}),
 								_1: {ctor: '[]'}
 							}),
-						_1: {ctor: '[]'}
+						_1: {
+							ctor: '::',
+							_0: A2(
+								_elm_lang$html$Html$a,
+								{
+									ctor: '::',
+									_0: _elm_lang$html$Html_Attributes$class('goButton'),
+									_1: {
+										ctor: '::',
+										_0: _user$project$Style$goButtonStyle,
+										_1: {
+											ctor: '::',
+											_0: _elm_lang$html$Html_Attributes$target('_blank'),
+											_1: {
+												ctor: '::',
+												_0: _elm_lang$html$Html_Attributes$href(project.git),
+												_1: {ctor: '[]'}
+											}
+										}
+									}
+								},
+								{
+									ctor: '::',
+									_0: A2(
+										_elm_lang$html$Html$span,
+										{
+											ctor: '::',
+											_0: _user$project$Style$buttonSpanStyle,
+											_1: {ctor: '[]'}
+										},
+										{
+											ctor: '::',
+											_0: _elm_lang$html$Html$text('View the Code!'),
+											_1: {ctor: '[]'}
+										}),
+									_1: {ctor: '[]'}
+								}),
+							_1: {ctor: '[]'}
+						}
 					}
 				}
 			});
